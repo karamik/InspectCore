@@ -1,0 +1,19 @@
+# InspectCore — minimal deps for Termux / aarch64
+# Priority: speed of deployment. No torch, no vLLM, no GPU.
+
+# Core math for G-Space Inspector
+numpy>=1.24
+
+# ECDSA (classical layer of PQ signer)
+cryptography>=41.0
+
+# sqlite3, argparse, hashlib, hmac, json, base64 — stdlib, no install needed.
+
+# --- Optional, install later as needed ---
+# Real TinyLlama inference on CPU (compiles on Termux, ~5-10 min):
+# llama-cpp-python>=0.2.0
+# Real post-quantum Dilithium3 (may not build on Termux aarch64):
+# liboqs-python>=0.9.0
+
+# Dev / tests
+pytest>=7.0
